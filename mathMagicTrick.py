@@ -29,6 +29,15 @@ print(f'Final number: {int(newNum)}')
     # HINT: you need to cast step_1 to a int because user input is a type string.
     # (**** Make it 2 variables 1 for input, 1 for the steps ****)
 
+userInput = ['', '']
 
+userInput[0] = int(input('Enter a number between 1 and 9:\t'))
+
+userInput[1] = userInput[0] * 2
+userInput[1] += 10
+userInput[1] /= 2
+userInput[1] = userInput[1] - userInput[0]
+
+print(f'Final number: {int(userInput[1])}')
 
 # BONUS 2: can you use a single variable?
