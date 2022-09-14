@@ -15,7 +15,15 @@
 # print step_5 and you should see 5!
 
 # Easy Solution:
+import random
 
+randNum = random.randint(1, 9)
+newNum = randNum * 2
+newNum += 10
+newNum /= 2
+newNum = newNum - randNum
+
+print(f'Final number: {int(newNum)}')
 
 # BONUS 1: can you convert step_1 to prompt a user's input?
     # HINT: you need to cast step_1 to a int because user input is a type string.
