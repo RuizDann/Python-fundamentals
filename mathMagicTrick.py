@@ -41,3 +41,20 @@ userInput[1] = userInput[1] - userInput[0]
 print(f'Final number: {int(userInput[1])}')
 
 # BONUS 2: can you use a single variable?
+
+userNum = [0, 0]
+
+while True:
+    userNum[0] = int(input("Enter a number between 1 and 9:\t"))
+    
+    if 1 <= userNum[0] <= 9:
+        break
+    else:
+        print("Input must be an integer between 1 and 9.")
+
+userNum[1] = userNum[0] * 2
+userNum[1] += 10
+userNum[1] /= 2
+userNum[1] = userNum[1] - userNum[0]
+
+print(f'Final number: {int(userNum[1])}')
