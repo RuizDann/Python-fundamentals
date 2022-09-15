@@ -16,6 +16,15 @@ if len(us_states) == 50:
     print(True)
 else:
     print(False)
-# create a variable my_state_index and assign the index value of the state you currently reside in
+# prints True
 
+# create a variable my_state_index and assign the index value of the state you currently reside in
 # print us_state with my_state_index to ACCESS your state!
+
+userState = input("Enter your state: ")
+userState = userState.title()
+
+for i, state in enumerate(us_states):
+    if state == userState:
+        my_state_index = i
+        print(my_state_index)
