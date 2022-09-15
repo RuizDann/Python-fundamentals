@@ -18,7 +18,9 @@ studentGradeString = input("Enter your grade: ")
 
 studentGradeInt = int(studentGradeString)
 
-if (studentGradeInt >= 90):
+if studentGradeInt >= 101:
+    print("Invalid grade")  
+elif (studentGradeInt >= 90):
     print("A")
 elif (studentGradeInt >= 80):
     print("B")
@@ -26,5 +28,7 @@ elif (studentGradeInt >= 70):
     print("C")
 elif (studentGradeInt >= 60):
     print("D")
-else:
+elif (studentGradeInt >= 0):
     print("F")
+else:
+    print("Invalid grade")
