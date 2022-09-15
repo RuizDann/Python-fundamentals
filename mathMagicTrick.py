@@ -23,7 +23,7 @@ newNum += 10
 newNum /= 2
 newNum = newNum - randNum
 
-print(f'Final number: {int(newNum)}')
+print(f'Final number: {int(newNum)}\n')
 
 # BONUS 1: can you convert step_1 to prompt a user's input?
     # HINT: you need to cast step_1 to a int because user input is a type string.
@@ -38,7 +38,7 @@ userInput[1] += 10
 userInput[1] /= 2
 userInput[1] = userInput[1] - userInput[0]
 
-print(f'Final number: {int(userInput[1])}')
+print(f'Final number: {int(userInput[1])}\n')
 
 # BONUS 2: can you use a single variable?
 
@@ -57,4 +57,4 @@ userNum[1] += 10
 userNum[1] /= 2
 userNum[1] = userNum[1] - userNum[0]
 
-print(f'Final number: {int(userNum[1])}')
+print(f'Final number: {int(userNum[1])}\n')
