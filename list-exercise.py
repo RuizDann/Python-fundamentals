@@ -10,7 +10,7 @@ us_states = ["Alabama", "Alaska", "Arizona", "Arkansas", "California",
 "Virginia", "Washington", "West Virginia", "Wisconsin", "Wyoming"]
 
 # print the LENgth of us_states
-
+print(len(us_states))
 # print the comparison boolean of the LENgth of us_states to 50
 
 # create a variable my_state_index and assign the index value of the state you currently reside in
