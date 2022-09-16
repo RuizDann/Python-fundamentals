@@ -7,7 +7,9 @@ lowercase = ['a', 'b', 'c', 'd', 'e',
              'u', 'v', 'w', 'x', 'y', 'z']
 
 # 1. loop through the lowercase and print each element
-
+for letter in lowercase:
+    loc = lowercase.index(letter)
+    print(f'{loc + 1}: {letter}')
 # 2. loop through the lowercase and print the capitalization of each element
 
 # MEDIUM
