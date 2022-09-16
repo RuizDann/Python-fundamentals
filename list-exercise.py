@@ -32,3 +32,11 @@ for i, state in enumerate(us_states):
     if state == userState:
         my_state_index = i
         print(my_state_index)
+
+# another way to do it
+for state in us_states:
+  if state == userState:
+    print("found it at index: ", us_states.index(state))
+    break
+  else:
+    continue
