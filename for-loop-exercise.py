@@ -19,9 +19,13 @@ for letter in lowercase:
 
 # MEDIUM
 # 1. create a new variable called uppercase with an empty list
+uppercase = []
 
 # 2. loop through the lowercase list
     # 2a. append the capitalization of each element to the uppercase list
+for letter in lowercase:
+    uppercase.append(letter.upper())
+print(uppercase)
 
 # HARD
 
