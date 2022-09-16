@@ -1,4 +1,4 @@
-# EASY
+# Use the following list to complete the following exercises:
 
 lowercase = ['a', 'b', 'c', 'd', 'e',
              'f', 'g', 'h', 'i', 'j',
@@ -6,14 +6,18 @@ lowercase = ['a', 'b', 'c', 'd', 'e',
              'p', 'q', 'r', 's', 't',
              'u', 'v', 'w', 'x', 'y', 'z']
 
+# EASY
 # 1. loop through the lowercase and print each element
 for letter in lowercase:
     loc = lowercase.index(letter)
     print(f'{loc + 1}: {letter}')
+
 # 2. loop through the lowercase and print the capitalization of each element
+for letter in lowercase:
+    loc = lowercase.index(letter)
+    print(f'{loc + 1}: {letter.upper()}')
 
 # MEDIUM
-
 # 1. create a new variable called uppercase with an empty list
 
 # 2. loop through the lowercase list
