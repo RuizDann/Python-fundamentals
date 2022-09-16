@@ -1,31 +1,31 @@
 # Use the following list to complete the following exercises:
 
-# lowercase = ['a', 'b', 'c', 'd', 'e',
-#              'f', 'g', 'h', 'i', 'j',
-#              'k', 'l', 'm', 'n', 'o',
-#              'p', 'q', 'r', 's', 't',
-#              'u', 'v', 'w', 'x', 'y', 'z']
+lowercase = ['a', 'b', 'c', 'd', 'e',
+             'f', 'g', 'h', 'i', 'j',
+             'k', 'l', 'm', 'n', 'o',
+             'p', 'q', 'r', 's', 't',
+             'u', 'v', 'w', 'x', 'y', 'z']
 
 # EASY
 # 1. loop through the lowercase and print each element
-# for letter in lowercase:
-#     loc = lowercase.index(letter)
-#     print(f'{loc + 1}: {letter}')
+for letter in lowercase:
+    loc = lowercase.index(letter)
+    print(f'{loc + 1}: {letter}')
 
 # 2. loop through the lowercase and print the capitalization of each element
-# for letter in lowercase:
-#     loc = lowercase.index(letter)
-#     print(f'{loc + 1}: {letter.upper()}')
+for letter in lowercase:
+    loc = lowercase.index(letter)
+    print(f'{loc + 1}: {letter.upper()}')
 
 # MEDIUM
 # 1. create a new variable called uppercase with an empty list
-# uppercase = []
+uppercase = []
 
 # 2. loop through the lowercase list
     # 2a. append the capitalization of each element to the uppercase list
-# for letter in lowercase:
-#     uppercase.append(letter.upper())
-# print(uppercase)
+for letter in lowercase:
+    uppercase.append(letter.upper())
+print(uppercase)
 
 # HARD
 # A safe password has a minimum of (1) uppercase, (1) lowercase, (1) number, (1) special character.
