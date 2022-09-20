@@ -76,13 +76,13 @@ if (len(password) >= 4):
         if i.isupper() == True:
             has_uppercase = True
             
-        if i.islower() == True:
+        elif i.islower() == True:
             has_lowercase = True
             
-        if i.isdigit() == True:
+        elif i.isdigit() == True:
             has_number = True
             
-        if i in special_char:
+        elif i in special_char:
             has_special_char = True
     
 if has_uppercase == True and has_lowercase == True and has_number == True and has_special_char == True:
@@ -106,13 +106,13 @@ if (len(password) >= 4):
         if i.isupper() == True:
             has_uppercase = True
             
-        if i.islower() == True:
+        elif i.islower() == True:
             has_lowercase = True
             
-        if i.isdigit() == True:
+        elif i.isdigit() == True:
             has_number = True
             
-        if i in special_char:
+        elif i in special_char:
             has_special_char = True
     
 if has_uppercase == True and has_lowercase == True and has_number == True and has_special_char == True:
@@ -141,13 +141,13 @@ if (len(password) >= 4):
         if i.isupper() == True:
             has_uppercase = True
             
-        if i.islower() == True:
+        elif i.islower() == True:
             has_lowercase = True
             
-        if i.isdigit() == True:
+        elif i.isdigit() == True:
             has_number = True
             
-        if i in special_char:
+        elif i in special_char:
             has_special_char = True
     
 if has_uppercase == True and has_lowercase == True and has_number == True and has_special_char == True:
