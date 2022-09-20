@@ -57,6 +57,6 @@ for qual in range(2, len(quantity_num) + 2):
     ws.cell(row=prod, column=5).value = quantity_num[qual - 2]
 
 # save your file
-# wb.save("./spreadsheets/inventory.xlsx")
+wb.save("./spreadsheets/inventory.xlsx")
 
-# wb.close()
+wb.close()
