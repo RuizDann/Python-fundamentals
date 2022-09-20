@@ -152,11 +152,13 @@ if (len(password) >= 4):
     
 if has_uppercase == True and has_lowercase == True and has_number == True and has_special_char == True:
     print("SAFE STRONG PASSWORD")
-elif has_uppercase == False:
-    print("Update password: You need an uppercase letter")
-elif has_lowercase == False:
-    print("Update password: You need a lowercase letter")
-elif has_number == False:
-    print("Update password: You need a number")
-elif has_special_char == False:
-    print("Update password: You need a special character")
+else:
+    print("Weak Password")
+    if has_uppercase == False:
+        print("Update password: You need an uppercase letter")
+    elif has_lowercase == False:
+        print("Update password: You need a lowercase letter")
+    elif has_number == False:
+        print("Update password: You need a number")
+    elif has_special_char == False:
+        print("Update password: You need a special character")
