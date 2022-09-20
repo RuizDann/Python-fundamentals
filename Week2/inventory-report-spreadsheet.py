@@ -37,9 +37,26 @@ max_amt = [1000, 500, 200, 1500, 2000, 100, 200, 200, 100, 200, 3500, 100, 1000]
 reorder_thresh = [300, 100, 50, 500, 600, 10, 25, 25, 10, 50, 1000, 5, 250]
 quantity_num = [743, 101, 137, 364, 120, 85, 24, 12, 39, 234, 1232, 11, 249]
 
-for colTitles in range(1, len(column_titles)+1):
-    ws.cell(row=1, column=colTitles).value = column_titles[colTitles-1]
+for colTitles in range(1, len(column_titles) + 1):
+    ws.cell(row=1, column=colTitles).value = column_titles[colTitles - 1]
     # print(column_titles[colTitles-1])
+
+for prod in range(2, len(prod_titles) + 2):
+    ws.cell(row=prod, column=1).value = prod_titles[prod - 2]
+    
+for id in range(2, len(prod_ids) + 2):
+    ws.cell(row=prod, column=2).value = prod_ids[id - 2]
+    
+for amt in range(2, len(max_amt) + 2):
+    ws.cell(row=prod, column=3).value = max_amt[amt - 2]
+    
+for thres in range(2, len(reorder_thresh) + 2):
+    ws.cell(row=prod, column=4).value = reorder_thresh[thres - 2]
+    
+for qual in range(2, len(quantity_num) + 2):
+    ws.cell(row=prod, column=5).value = quantity_num[qual - 2]
 
 # save your file
 # wb.save("./spreadsheets/inventory.xlsx")
+
+# wb.close()
