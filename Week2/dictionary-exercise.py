@@ -103,7 +103,7 @@ user_info = [46453, "Devin", "Smith"]
     #   - last_name: user_list[2]
 
 user_dict = {}
-# check if dictionary is empty
+# checks to see if dictionary is empty
 print(user_dict.items())
 
 def list_to_dict(user_list):
