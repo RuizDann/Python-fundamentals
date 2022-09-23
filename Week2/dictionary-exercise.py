@@ -24,8 +24,6 @@ for key, value in inventory.items():
 # (When we work with global variables/objects and don't return anything, 
 # these functions are implicit return functions!)
 
-    # a. Dictionaries - create a function that takes in a dictionary which updates the "role" key value pair and makes it uppercase
-
 user_1 = {
     "firstName": "Stephanie",
     "lastName": "Lentell",
@@ -46,10 +44,20 @@ user_3 = {
     "role": "Instructor",
     "id": "74324"
 }
-
+    # a. Dictionaries - create a function that takes in a dictionary which updates the "role" key value pair and makes it uppercase
+def role_to_upper(user):
+    for key, value in user.items():
+        if key == "role":
+            user.update({key: value.upper()})
+        else:
+            continue
+    print(user.items())
+    
 
     # b. Dictionaries - Run the functions (3 times, 1 for each user!)
-
+role_to_upper(user_1)
+role_to_upper(user_2)
+role_to_upper(user_3)
 
 instructor_list = [user_1, user_2, user_3]
 # print(instructor_list)
@@ -57,7 +65,18 @@ instructor_list = [user_1, user_2, user_3]
     # c. List - create a function that takes in the list and 
     # checks if the each user's role is equal to "INSTRUCTOR". 
 # if it is the same, print VALID else print INVALID (try to use a loop here!)
+def role_upper_checker(list):
+    for user in list:
+        for key, value in user.items():
+            if key == "role":
+                if value == value.upper():
+                    print("VALID")
+                else:
+                    print("INVALID")
+            else:
+                continue
 
+role_upper_checker(instructor_list)
 
 # import random    
 
