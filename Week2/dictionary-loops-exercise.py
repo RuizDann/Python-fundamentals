@@ -9,9 +9,15 @@ inventory = {
 
 # SCENARIO: A person came in and bought one of everything!
 
-# for key, value in inventory.items():
+for key, value in inventory.items():
     # decrement item by using an assignment operator
     # NOTE: recall that item represents the key of the key:value pair
+    if value == 0:
+        print(f'Sorry {key} is currently out of stock.')
+    else:
+        value -= 1
+    print(f'{key}: {value}')
+        
 
 
 # 2. Implicit Functions 
@@ -46,7 +52,7 @@ user_3 = {
 
 
 instructor_list = [user_1, user_2, user_3]
-print(instructor_list)
+# print(instructor_list)
 
     # c. List - create a function that takes in the list and 
     # checks if the each user's role is equal to "INSTRUCTOR". 
