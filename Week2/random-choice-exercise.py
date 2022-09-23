@@ -59,6 +59,6 @@ for row in range(2, len(first_names) + 2):
     assign_names(row)
 
 # save your new workbook!
-wb.save("Week2\spreadsheets\random-choice-exercise.xlsx")
+wb.save("Week2\spreadsheets\day_3_exercise.xlsx")
 
 wb.close()
