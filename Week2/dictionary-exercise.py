@@ -77,15 +77,22 @@ def role_upper_checker(list):
                 continue
 
 role_upper_checker(instructor_list)
-
-# import random    
-
-        # user["id"] = random.randomint(1000, 9999)
-
-    # d. import the random module and update the function to re-assign the id of each user
-
-    # e. don't forget to run it!
     
+    # d. import the random module and update the function to re-assign the id of each user
+        # user["id"] = random.randomint(1000, 9999)
+    # e. don't forget to run it!
+import random    
+
+def id_to_random(list):
+    for user in list:
+        for key, value in user.items():
+            if key == "id":
+                user.update({key: random.randint(1000, 9999)})
+            else:
+                continue
+    print(list)
+id_to_random(instructor_list)
+
 # 3. Explicit Functions
 user_info = [46453, "Devin", "Smith"]
     # Each element by index of user_info follows the format of: id, first_name, last_name
