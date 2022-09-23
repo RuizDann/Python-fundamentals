@@ -85,7 +85,7 @@ import random
 
 def id_to_random(list):
     for user in list:
-        for key, value in user.items():
+        for key in user.keys():
             if key == "id":
                 user.update({key: random.randint(1000, 9999)})
             else:
@@ -96,10 +96,23 @@ id_to_random(instructor_list)
 # 3. Explicit Functions
 user_info = [46453, "Devin", "Smith"]
     # Each element by index of user_info follows the format of: id, first_name, last_name
-
-
     # Create a function with a parameter user_list
     #   - return a dictionary with the follow key value pairs:
     #   - id: user_list[0]
     #   - first_name: user_list[1]
     #   - last_name: user_list[2]
+
+user_dict = {}
+# check if dictionary is empty
+print(user_dict.items())
+
+def list_to_dict(user_list):
+    key_list = ["id", "first_name", "last_name"]
+    for index in range(0, len(user_list)):
+        user_dict.update({key_list[index]: user_list[index]})
+
+# runs the function
+list_to_dict(user_info)
+
+# check to see if dictionary is now filled
+print(user_dict.items())
